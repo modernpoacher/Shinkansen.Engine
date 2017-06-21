@@ -1,11 +1,11 @@
 {
-  "name": "shinkansen-engine",
-  "version": "0.0.1",
-  "description": "Shinkansen Engine",
+  "name": "shinkansen-motor",
+  "version": "0.0.2",
+  "description": "Shinkansen Motor",
   "main": "./index.js",
   "keywords": [
     "Shinkansen",
-    "Engine",
+    "Motor",
     "Zashiki Karakuri",
     "React",
     "Schema",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/Shinkansen.Engine.git"
+    "url": "git@github.com/modernpoacher/Shinkansen.Motor.git"
   },
   "author": "Jonathan Perry for Modern Poacher",
   "license": "MIT",

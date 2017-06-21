@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Form from 'react-jsonschema-form'
 
-export class Engine extends React.Component {
+export class Motor extends React.Component {
   shouldComponentUpdate = ({ definition: { schema } }) => schema !== this.props.definition.schema
 
   handleChange = (parameters) => this.props.onChange(parameters)
   handleSubmit = ({ formData }) => this.props.onSubmit(formData)
   handleError = (parameters) => this.props.onError(parameters)
 
-  render () { // // console.log('(Engine)render()')
+  render () { // // console.log('(Motor)render()')
     const {
       definition
     } = this.props
@@ -22,7 +22,7 @@ export class Engine extends React.Component {
       } = definition
 
       return (
-        <div className='shinkansen-engine' key='shinkansen-engine'>
+        <div className='shinkansen-motor' key='shinkansen-motor'>
           <Form
             schema={schema}
             formData={formData}
@@ -38,7 +38,7 @@ export class Engine extends React.Component {
   }
 }
 
-Engine.propTypes = {
+Motor.propTypes = {
   definition: PropTypes.shape({
     schema: PropTypes.object
   }).isRequired,
@@ -47,7 +47,7 @@ Engine.propTypes = {
   onError: PropTypes.func
 }
 
-Engine.defaultProps = {
+Motor.defaultProps = {
   definition: {},
   onChange: () => {}, /* no op */
   onSubmit: () => {}, /* no op */
