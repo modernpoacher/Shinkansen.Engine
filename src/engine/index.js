@@ -22,7 +22,7 @@ export class Engine extends React.Component {
       } = definition
 
       return (
-        <div className='locomotive-engine' key='locomotive-engine'>
+        <div className='shinkansen-engine' key='shinkansen-engine'>
           <Form
             schema={schema}
             formData={formData}
