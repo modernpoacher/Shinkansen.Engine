@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-motor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shinkansen Motor",
   "main": "./index.js",
   "keywords": [
@@ -22,7 +22,8 @@
   },
   "scripts": {
     "build": "babel src -d lib",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "eslint src"
   },
   "standard": {
@@ -39,6 +40,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "fsevents": "1.1.2",
+    "node-gyp": "3.6.2",
+    "node-pre-gyp": "0.6.36",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-jsonschema-form": "^0.49.0",
