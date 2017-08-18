@@ -9,7 +9,7 @@ export class Motor extends React.Component {
   handleSubmit = ({ formData }) => this.props.onSubmit(formData)
   handleError = (parameters) => this.props.onError(parameters)
 
-  render () { // // console.log('(Motor)render()')
+  render () {
     const {
       definition
     } = this.props
@@ -49,7 +49,7 @@ Motor.propTypes = {
 
 Motor.defaultProps = {
   definition: {},
-  onChange: () => {}, /* no op */
-  onSubmit: () => {}, /* no op */
-  onError: () => {} /* no op */
+  onChange: () => {},
+  onSubmit: () => {},
+  onError: () => {}
 }
