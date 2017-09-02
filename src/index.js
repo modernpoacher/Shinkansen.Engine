@@ -1,3 +1,1 @@
-export {
-  Motor
-} from './motor'
+export Motor from './motor'

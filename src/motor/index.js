@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Form from 'react-jsonschema-form'
 
-export class Motor extends React.Component {
+export default class Motor extends React.Component {
   shouldComponentUpdate = ({ definition: { schema } }) => schema !== this.props.definition.schema
 
   handleChange = (parameters) => this.props.onChange(parameters)
@@ -22,7 +22,7 @@ export class Motor extends React.Component {
       } = definition
 
       return (
-        <div className='shinkansen-motor' key='shinkansen-motor'>
+        <div className='shinkansen-motor'>
           <Form
             schema={schema}
             formData={formData}
@@ -34,7 +34,7 @@ export class Motor extends React.Component {
       )
     }
 
-    return false
+    return null
   }
 }
 
@@ -48,7 +48,6 @@ Motor.propTypes = {
 }
 
 Motor.defaultProps = {
-  definition: {},
   onChange: () => {},
   onSubmit: () => {},
   onError: () => {}
