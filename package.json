@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-motor",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Shinkansen Motor",
   "main": "./index.js",
   "keywords": [
@@ -21,7 +21,7 @@
     "node": ">=7.0.0"
   },
   "scripts": {
-    "prepublishOnly": "npm run babel",
+    "prepublishOnly": "npm run lint:fix; npm run babel",
     "prebuild": "bash index.sh",
     "build": "npm run babel",
     "babel": "babel src -d lib",
@@ -49,6 +49,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
