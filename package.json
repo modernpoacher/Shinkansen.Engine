@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-motor",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Shinkansen Motor",
   "main": "./index.js",
   "keywords": [
