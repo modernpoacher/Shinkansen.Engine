@@ -8,7 +8,7 @@ if [[ $? -eq 0 ]]; then
 
   # cd ../shinkansen-motor
   npm run clean &> /dev/null
-  npm install &> /dev/null
+  npm ci &> /dev/null
 
   # echo -e "\x15" # CR
   echo -e $PASS $MODULE
