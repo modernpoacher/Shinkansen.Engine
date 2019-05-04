@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/Shinkansen.Motor.git"
+    "url": "git@github.com/modernpoacher/shinkansen-motor.git"
   },
   "author": "Jonathan Perry for Modern Poacher Limited",
   "license": "MIT",
