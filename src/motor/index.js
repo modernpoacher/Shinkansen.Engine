@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import Form from 'react-jsonschema-form'
 
 export default class Motor extends React.Component {
-  shouldComponentUpdate = ({ definition: { schema } }) => schema !== this.props.definition.schema
+  shouldComponentUpdate = (props) => props.definition.schema !== this.props.definition.schema
 
   handleChange = (parameters) => this.props.onChange(parameters)
-  handleSubmit = ({ formData }) => this.props.onSubmit(formData)
+  handleSubmit = ({ formData = null } = {}) => this.props.onSubmit(formData)
   handleError = (parameters) => this.props.onError(parameters)
 
   render () {
