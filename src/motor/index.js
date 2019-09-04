@@ -40,7 +40,9 @@ export default class Motor extends React.Component {
 
 Motor.propTypes = {
   definition: PropTypes.shape({
-    schema: PropTypes.object
+    schema: PropTypes.object,
+    formData: PropTypes.object,
+    uiSchema: PropTypes.object
   }).isRequired,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func,
