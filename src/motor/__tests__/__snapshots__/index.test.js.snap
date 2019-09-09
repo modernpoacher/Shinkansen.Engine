@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shinkansen-motor/motor \`definition\` has \`schema\` object renders 1`] = `ShallowWrapper {}`;
+
+exports[`shinkansen-motor/motor Always renders 1`] = `ShallowWrapper {}`;
