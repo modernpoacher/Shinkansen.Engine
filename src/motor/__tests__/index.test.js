@@ -25,6 +25,7 @@ describe('shinkansen-motor/motor', () => {
     const schema = {}
 
     let instance
+
     beforeEach(() => {
       const wrapper = shallow(<Motor definition={{ schema }} />)
 
