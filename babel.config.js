@@ -19,40 +19,40 @@ function env () {
 }
 
 const presets = [
-    [
-      '@babel/env', {
-        useBuiltIns: 'entry',
-        targets: {
-          node: 'current',
-          browsers: [
-            'last 2 versions'
-          ]
-        },
-        corejs: 3
-      }
-    ],
-    '@babel/react'
-  ]
+  [
+    '@babel/env', {
+      useBuiltIns: 'entry',
+      targets: {
+        node: 'current',
+        browsers: [
+          'last 2 versions'
+        ]
+      },
+      corejs: 3
+    }
+  ],
+  '@babel/react'
+]
 
 const plugins = [
-    '@babel/proposal-export-default-from',
-    '@babel/proposal-class-properties',
-    [
-      'module-resolver', {
-        alias: {
-          'shinkansen-motor': './src'
-        }
+  '@babel/proposal-export-default-from',
+  '@babel/proposal-class-properties',
+  [
+    'module-resolver', {
+      alias: {
+        'shinkansen-motor': './src'
       }
-    ]
+    }
   ]
+]
 
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-  compact: true,
-  comments: false,
-  presets,
-  plugins
-}
+    compact: true,
+    comments: false,
+    presets,
+    plugins
+  }
 }
