@@ -1,7 +1,24 @@
-module.exports = {
-  compact: true,
-  comments: false,
-  presets: [
+const debug = require('debug')
+
+const log = debug('shinkansen')
+
+const {
+  env: {
+    NODE_ENV = 'development'
+  }
+} = process
+
+log('`shinkansen` is awake')
+
+function env () {
+  log({ NODE_ENV })
+
+  return (
+    NODE_ENV === 'production'
+  )
+}
+
+const presets = [
     [
       '@babel/env', {
         useBuiltIns: 'entry',
@@ -15,8 +32,9 @@ module.exports = {
       }
     ],
     '@babel/react'
-  ],
-  plugins: [
+  ]
+
+const plugins = [
     '@babel/proposal-export-default-from',
     '@babel/proposal-class-properties',
     [
@@ -27,4 +45,14 @@ module.exports = {
       }
     ]
   ]
+
+module.exports = (api) => {
+  if (api) api.cache.using(env)
+
+  return {
+  compact: true,
+  comments: false,
+  presets,
+  plugins
+}
 }
