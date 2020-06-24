@@ -1,6 +1,6 @@
 const debug = require('debug')
 
-const log = debug('shinkansen')
+const log = debug('shinkansen:motor')
 
 const {
   env: {
@@ -25,7 +25,11 @@ const presets = [
       targets: {
         node: 'current',
         browsers: [
-          'last 2 versions'
+          'last 4 versions',
+          'safari >= 9',
+          'ios >= 8',
+          'ie >= 9',
+          '> 2%'
         ]
       },
       corejs: 3
