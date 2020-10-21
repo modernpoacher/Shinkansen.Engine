@@ -1,16 +1,21 @@
 .DS_Store
 
 .circleci
+.github
 
 .editorconfig
 .eslintignore
 .eslintrc
 
+.depsrc
+
 # NPM
 .npmignore
 .npmrc
 
-coverage
+# Jest
 __tests__
-
 jest.config.js
+
+# Coverage
+coverage
