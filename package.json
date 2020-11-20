@@ -37,7 +37,7 @@
     "pre-commit": "npm run lint && npm test && npm run build && git add lib"
   },
   "dependencies": {
-    "debug": "^4.2.0",
+    "debug": "^4.3.1",
     "react-jsonschema-form": "^1.8.1"
   },
   "devDependencies": {
