@@ -41,28 +41,23 @@
     "react-jsonschema-form": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.15",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
     "@babel/eslint-parser": "^7.13.14",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-export-default-from": "^7.12.13",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
-    "@babel/register": "^7.13.14",
+    "@babel/register": "^7.13.16",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
-    "core-js": "^3.10.1",
+    "core-js": "^3.11.0",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^7.23.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-import-resolver-babel-module": "^5.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint": "^7.25.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "prop-types": "15.7.2",
@@ -71,6 +66,7 @@
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-test-renderer": "16.14.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "standard": "^16.0.3"
   }
 }
